@@ -2,7 +2,7 @@ provider "google" {
   project = "barbero-devops-iac"
   region  = "us-central1"
   zone    = "us-central1-c"
-  credentials = "${file("serviceaccount.yaml")}"
+  credentials = "${file("serviceaccount.yaml")}" 
 }
 
 resource "google_folder" "Financeiro" {
